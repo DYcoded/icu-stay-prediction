@@ -99,6 +99,9 @@ if predict_btn:
             
             prediction = model.predict(input_data)[0]
             probs = model.predict_proba(input_data)[0]
+
+            if prediction == 0 and severity_val == 0:
+                st.warning("⚠️ CLINICAL OVERRIDE: Although the AI predicts a 'Short Stay', the patient's vital signs are CRITICAL. Intensive Care protocols should take precedence over the model's statistical prediction.")
             
             col_res1, col_res2 = st.columns([1, 2])
             
