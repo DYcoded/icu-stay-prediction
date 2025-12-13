@@ -50,11 +50,7 @@ with col1:
     elif bp > 140 or pulse > 100:
         severity_val = 2 
         severity_text = "⚠️ Elevated (Moderate)"
-        st.markdown(f"""
-            <div style="background-color: #fff3cd; color: #856404; padding: 12px; border-radius: 8px; border: 1px solid #ffeeba;">
-                <span style="font-weight: bold;">⚠️ Warning:</span> {severity_text}
-            </div>
-        """, unsafe_allow_html=True)
+        st.warning(f"Warning: {severity_text}")
     else:
         st.success(f"Status: {severity_text}")
 
