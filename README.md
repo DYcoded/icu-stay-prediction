@@ -10,7 +10,7 @@ This project is an AI-powered application designed to predict the **Length of St
 
 You can test the live version of the application here:
 
-**[CLICK HERE TO VIEW LIVE DEMO](PASTE_YOUR_STREAMLIT_LINK_HERE)**
+**[CLICK HERE TO VIEW LIVE DEMO](https://icustay.streamlit.app/)**
 
 ---
 
