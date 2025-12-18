@@ -11,8 +11,8 @@ st.set_page_config(page_title="Hospital AI Prediction", page_icon="🏥", layout
 @st.cache_resource
 def load_model_resources():
     try:
-        model = joblib.load('hospital_model.pkl')
-        cols = joblib.load('model_columns.pkl')
+        model = joblib.load('models/hospital_model.pkl')
+        cols = joblib.load('models/model_columns.pkl')
         return model, cols
     except FileNotFoundError:
         return None, None
